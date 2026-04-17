@@ -185,19 +185,25 @@ async function loadCard(meta) {
 }
 
 async function revealCard() {
-  const { meta } = state.current;
-  const raw = await fetchNoteFile(meta.filename);
-  const { rawBody } = splitFrontmatter(raw);
+  try {
+    const { meta } = state.current;
+    const raw = await fetchNoteFile(meta.filename);
+    const { rawBody } = splitFrontmatter(raw);
 
-  // Sources from index.json are authoritative; fall back to meta.sources
-  const bodyHtml = renderMarkdown(rawBody);
-  setApp(renderCardBack(meta, bodyHtml));
+    const bodyHtml = renderMarkdown(rawBody);
+    setApp(renderCardBack(meta, bodyHtml));
 
-  // Run KaTeX after DOM update
-  const bodyEl = document.querySelector('.card-body');
-  if (bodyEl) renderMath(bodyEl);
+    const bodyEl = document.querySelector('.card-body');
+    if (bodyEl) renderMath(bodyEl);
 
-  state.revealed = true;
+    state.revealed = true;
+  } catch (err) {
+    document.querySelector('#btn-reveal')?.insertAdjacentHTML(
+      'afterend',
+      `<p style="color:#dc2626;margin-top:.75rem;font-size:.875rem;">Error: ${err.message}</p>`
+    );
+    console.error('revealCard failed:', err);
+  }
 }
 
 async function loadDailyCard() {
