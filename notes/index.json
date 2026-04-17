@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17T21:02:22Z",
+  "generated": "2026-04-17T21:25:38Z",
   "notes": [
     {
       "filename": "bayes-theorem.md",
@@ -31,6 +31,19 @@
         "Rice, J.A. (2006). Mathematical Statistics and Data Analysis, 3rd ed. Duxbury Press.",
         "https://en.wikipedia.org/wiki/Central_limit_theorem"
       ],
+      "date_created": "2026-04-17",
+      "date_modified": "2026-04-17",
+      "difficulty": null
+    },
+    {
+      "filename": "ohms-law.md",
+      "title": "Ohm's Law",
+      "prompt": "State both microscopic and macroscopic versions of Ohm's Law and derive them from first principles.",
+      "tags": [
+        "physics",
+        "electromagnetism"
+      ],
+      "sources": [],
       "date_created": "2026-04-17",
       "date_modified": "2026-04-17",
       "difficulty": null
