@@ -1,0 +1,39 @@
+{
+  "generated": "2026-04-17T20:50:44Z",
+  "notes": [
+    {
+      "filename": "bayes-theorem.md",
+      "title": "Bayes' Theorem",
+      "prompt": "State Bayes' theorem. What does each term mean, and when is it useful?",
+      "tags": [
+        "probability",
+        "statistics",
+        "bayesian-inference"
+      ],
+      "sources": [
+        "Jaynes, E.T. (2003). Probability Theory: The Logic of Science. Cambridge University Press.",
+        "https://en.wikipedia.org/wiki/Bayes%27_theorem"
+      ],
+      "date_created": "2026-04-17",
+      "date_modified": "2026-04-17",
+      "difficulty": null
+    },
+    {
+      "filename": "central-limit-theorem.md",
+      "title": "Central Limit Theorem",
+      "prompt": "State the Central Limit Theorem. What conditions are needed and why does it matter?",
+      "tags": [
+        "probability",
+        "statistics",
+        "distributions"
+      ],
+      "sources": [
+        "Rice, J.A. (2006). Mathematical Statistics and Data Analysis, 3rd ed. Duxbury Press.",
+        "https://en.wikipedia.org/wiki/Central_limit_theorem"
+      ],
+      "date_created": "2026-04-17",
+      "date_modified": "2026-04-17",
+      "difficulty": null
+    }
+  ]
+}
